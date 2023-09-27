@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.IncluirNovoCompromisso">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editNomeDoCompromisso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Qual será o compromisso?"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="63dp" />
+
+        <EditText
+            android:id="@+id/editDataCompromisso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Informe a data do compromisso"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="123dp" />
+
+        <EditText
+            android:id="@+id/editHoraCompromisso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Informe o horario agendado"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="183dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+
+            <Button
+                android:id="@+id/btnCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancelar"
+                android:layout_marginEnd="16dp"
+                tools:layout_editor_absoluteX="102dp"
+                tools:layout_editor_absoluteY="254dp" />
+
+            <Button
+                android:id="@+id/btnSalvar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salvar"
+                tools:layout_editor_absoluteX="226dp"
+                tools:layout_editor_absoluteY="254dp" />
+
+        </TableRow>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>
